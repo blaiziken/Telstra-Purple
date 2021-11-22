@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog Single - Telstra Purple</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/blog.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Sailor - v4.3.0
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Telstra Purple</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="getstarted">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Blog Single</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>Blog Single</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="assets/img/blog/blog-single3-post1.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single3.html">Structured Streaming in Azure Synapse</a>
+              </h2>
+
+            
+              <div class="entry-content">
+                <p>
+                  With the rise of IoT and machine learning, there is an increasing demand for real-time insights on constantly flowing data.
+                </p>
+          
+                  <p>
+                    Born from the legacy Azure SQL DW, Synapse is typically brought up in the context of more traditional Data Warehousing, with batch processing serving SQL layers for BI Developers to run reports off.    </p>
+                  <p>
+                    However, new updates in Azure Synapse have made it possible to build a robust data lake-house, able to process and serve data as it comes.
+                   </p>
+              <h2>Databricks vs Synapse</h2>
+               <p>The conversation of data lake houses, data streaming, and machine learning is often directed towards the King Pin of distributed cloud processing: Databricks. There are many benefits that Databricks brings over Synapse's vanilla version of Apache Spark, for example, a shiny new Spark engine, delta table optimisation, and integration with MLflow. This article does not aim to invalidate these fantastic features but offers an alternative product to consider.</p>
+               <p>Indeed Microsoft seems to be pushing Synapse quite heavily with built-in integration to other Microsoft products like Power BI and Azure Data Factory. If you are in the process of designing your new data platform then it's useful to know what tools are out there.</p>
+              <h2>Our Scenario</h2>
+               <p>We will be adapting the example scenario from Databricks' learning pathway described <a href="https://databricks.com/blog/2020/08/03/modern-industrial-iot-analytics-on-azure-part-1.html"><b>here</b></a>. This will provide a clear comparison between the two services, and help you distinguish the key differences between them.</p>
+               <h2>Architecture</h2>
+               <p>The architecture described below is built on three main philosophies.</p>
+               <ol>
+                <li><b>Independence of compute and storage:</b>&nbsp;End-users, be they data analysts, data scientists, or business analysts, should be able to access the data through a variety of means. Access to the data should not be limited by the compute used.</li>
+                <li><b>Reduce data duplication as much as possible:</b>&nbsp;The same data should not be duplicated across various locations (separate from redundancy and disaster recovery). If data is to be accessed via different means, then only a single source should be referenced.</li>
+                <li><b>Serve data as quickly as possible:</b>&nbsp;The key distinction from batch processing to stream processing is the ability to get real-time insights on the data coming into our system. We want to be able to serve this data as quickly as possible.</li>
+                </ol>
+               <p>We will not go into too much detail on security and governance instead, we will sketch out an example of how to get usable data as quickly as possible.</p>
+
+              <img src="assets/img/blog/blog-single3-post2.png" alt="" class="img-fluid">
+               <p>If it isn't obvious by this point, the centre point of this solution is Azure Synapse. We will be using a Spark Pool to stream and process the data into the open-source Delta Lake format. Additionally, we will be using the serverless On-Demand SQL Pool to surface our data to BI users.</p>
+               <p>Supporting our Synapse workspace are three (3) additional resources:</p>
+               <ul>
+                <li><b>Azure Storage Account:</b> This Azure storage account is our Gen2 Azure Data Lake. All our data will be stored in a container within this account, organised into separate directories.</li>
+                <li><b>Azure IoT Hub:</b> This hub we will use to manage and route messages from our simulated IoT device</li>
+                <li><b>Azure Key Vault:</b> Here we store secrets and connection strings for all the above resources. Although we will not be discussing security in this post, Azure Synapse's integration with Key Vault makes it easy enough to parse secrets into our scripts without committing the cardinal sin of hard-coding them into our notebooks.</li>
+                </ul>
+              <h2>Data Processing</h2>
+                <p>For our process we will be transitioning data from 3 stages: Bronze <i>(Raw)</i>, Silver <i>(Aggregated)</i>, Gold <i>(Enriched)</i>.</p>
+                <img src="assets/img/blog/blog-single3-post3.png" alt="" class="img-fluid">
+                <a href="https://databricks.com/blog/2020/08/11/modern-industrial-iot-analytics-on-azure-part-2.html"class="active">Image Reference</a>
+
+                <p>All of our stages will be utilising apache Spark's Structured Streaming; a micro-batch processing engine built on the Spark SQL engine. Because of this, our data processing can be written using the same forms as our batch processing methods.</p>
+                <p>In structured streaming, there are three components to a <i>data stream</i>: The input source, the stream engine, and the output sink. For each stage, we create the <b>DataStreamReader</b>&nbsp;(connect to our source), perform any Spark SQL transformations (using the streaming engine), and create a <b>DataStreamWriter</b>&nbsp;(output data to the sink).</p>
+                <h3>Bronze</h3>
+                <p>The first step in data processing is to configure our ingestion stream from Azure IoT Hub, into the bronze area of our lake.</p>
+                <p>An obvious difference from Databricks is the lack of dbutils. Luckily, Synapse Spark comes with an analogous module mssparkutils. We can use this module in much the same way, for example: Interacting with the spark file-system, or loading secrets from an associated Azure Key Vault.</p>
+                <h3>Silver</h3>
+                <p>Now that our data has been saved to our data lake, we can create our second streaming stage with aggregations. Aggregations will make consumption of our telemetry data more accessible. In this example, we will aggregate our telemetry to 5-minute windows.</p>
+                <p>Because we are streaming data in as soon as it arrives, there is the possibility that messages will arrive late from the IoT device, or that data will change within the aggregation window. We can combat this with Delta Lake's <i>merge</i>&nbsp;functionality. The below code defines a function that will append or update data in our target delta table based on the keys (date, windowStart, windowEnd, and deviceid).</p>
+                <p>Once we have defined the merge behaviour, we can create our streams that read from the Bronze stage of our Delta Lake. Once again, the aggregation operations are no different to how we would manipulate a normal spark DataFrame. Querying embedded JSON-like objects from a Delta Lake is currently not supported in Synapse SQL. For this reason, we must unpack the window object into separate elements so that we can build SQL queries later.</p>
+              
+                <p>The ability to create a data stream from a delta lake table was introduced in Spark 3.1, and luckily support for Spark 3.1 in Azure Synapse is now in GA as of May 2021. However, at the time of writing the default Spark version for Synapse Spark Pools was still Spark 2.6, so make sure that you specify version 3.1 when creating your pools.</p>
+                <h3>Gold</h3>
+                <p>Our final stage simply joins the data from the two aggregated tables (weather and turbine) using <a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#stream-stream-joins">stream-stream joins</a>&nbsp;in Spark's Structured Streaming. This creates a new data stream that contains data from both sources.</p>
+                <p>At the end of this process, we are left with three populated and constantly updating locations of our lake, ready to be queried and used immediately.</p>
+                <img src="assets/img/blog/blog-single3-post4.png" class="img-fluid" alt="">
+                <h2>But Why?</h2>
+                <p>As mentioned at the beginning, Synapse is typically discussed in the context of Data Warehousing. This use case highlights one way Azure Synapse can go far beyond this.</p>
+                <p>Once we have set up the above streams we can utilise Synapse's built-in SQL engine to query the data. Although a word of warning at the time of writing querying delta lake tables is only possible on On-Demand SQL pools and is in public preview, meaning it is not suitable for production use.</p>
+                <img src="assets/img/blog/blog-single3-post5.png" class="img-fluid" alt="">
+                <p>In addition to ad-hoc queries, you can create an external table from the Delta Lake table on the SQL On-Demand pool. This allows BI developers to query the data with T-SQL or connect to the data like a standard Azure SQL server, but with the added benefit of on-demand serverless compute: And the best part is the data never has to leave the storage account!</p>
+                <img src="assets/img/blog/blog-single3-post6.png" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-single3-post7.png" class="img-fluid" alt="">
+                <p>Of course, this solution could also be possible with Databricks Spark and Synapse SQL however, the ability to use the same tool reduces architectural complexity, minimises costs, and enhances usability for the end-user. Here lies the true draw of Azure Synapse: <i>The useful all in one platform</i>.</p>
+                <p>I look forward to seeing Delta Lake querying with Synapse SQL come into GA. Once more established, expanding this simple use case into a fleshed out Kappa architecture</a>&nbsp;would be an interesting exercise for the future. Think about eliminating those overnight batch jobs, converting every ingestion task into a structured stream from the source!</p>
+                <p></p>
+
+              
+             <div class="w-100 padding-spacing-xlarge"></div>
+
+    
+             <p></p>
+             <p></p>
+
+
+           </div>
+          
+           <div class="blog-pagination">
+             <ul class="justify-content-center">
+               <li><a href="blog.html">Go back to blog</a></li>
+              
+             </ul>
+           </div>
+              
+            </article><!-- End blog entry -->
+ 
+            </div><!-- End blog author bio -->
+
+            
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <h3 class="sidebar-title">Search</h3>
+              <div class="sidebar-item search-form">
+                <form action="">
+                  <input type="text">
+                  <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div><!-- End sidebar search formn-->
+
+              <h3 class="sidebar-title">Categories</h3>
+              <div class="sidebar-item categories">
+                <ul>
+                  <li><a href="#">General <span>(25)</span></a></li>
+                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                  <li><a href="#">Travel <span>(5)</span></a></li>
+                  <li><a href="#">Design <span>(22)</span></a></li>
+                  <li><a href="#">Creative <span>(8)</span></a></li>
+                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                </ul>
+              </div><!-- End sidebar categories-->
+
+              <h3 class="sidebar-title">Recent Posts</h3>
+              <div class="sidebar-item recent-posts">
+                <div class="post-item clearfix">
+                  <img src="assets/img/blog/blog-recent-1.jpg" alt="">
+                  <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/blog/blog-recent-2.jpg" alt="">
+                  <h4><a href="blog-single.html">Quidem autem et impedit</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/blog/blog-recent-3.jpg" alt="">
+                  <h4><a href="blog-single.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/blog/blog-recent-4.jpg" alt="">
+                  <h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+                <div class="post-item clearfix">
+                  <img src="assets/img/blog/blog-recent-5.jpg" alt="">
+                  <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                </div>
+
+              </div><!-- End sidebar recent posts-->
+
+              <h3 class="sidebar-title">Tags</h3>
+              <div class="sidebar-item tags">
+                <ul>
+                  <li><a href="#">App</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Mac</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Office</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Studio</a></li>
+                  <li><a href="#">Smart</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div><!-- End sidebar tags-->
+
+            </div><!-- End sidebar -->
+
+          </div><!-- End blog sidebar -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Telstra Purple</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+           
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
